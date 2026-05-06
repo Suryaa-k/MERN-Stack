@@ -1,0 +1,40 @@
+
+.navbar h1{
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Netflix', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+.navbar a{
+    padding: 10px 20px;
+    margin: 0px 10px;
+    justify-content: space-between;
+    text-decoration: none;
+    text-transform: Capitalize;
+    color: white;
+    background-color: black;
+    transition: 1s ease;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.hero{
+    background: url("https://www.w3schools.com/w3images/architect.jpg") no-repeat center/cover;
+    height: 80vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
