@@ -2,73 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: sans-serif;
-}
-
-:root {
-    --primary-color: #000;
-    --secondary-color: #fff;
-
-    --bg-image: url("https://dummyimage.com/hd1080");
-    --shadow: 0 0 3px white
+    
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: white;
+    color: black;
 }
 
 section {
-    border: 2px solid white;
     padding: 40px;
 }
 
 .navbar {
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
-    padding: 16px;
-
+    justify-content: space-between;
+    padding: 10px 10px;
     position: sticky;
     top: 0;
-    z-index: 1001;
-    background: var(--secondary-color);
+    z-index: 100;
 }
 
 .navbar nav a {
     color: var(--primary-color);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 10px;
 }
 
 .hero {
-    height: 80vh;
-
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('https://img.freepik.com/premium-vector/workplace-business-management-finances-self-office-place-text-view-from-notebook-office-supplies-desktop_668389-59.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
-    background: #000 var(--bg-image) no-repeat center/cover;
+.hero h2 {
+    color: whitesmoke; 
+    font-size: 36px;
 }
 
 .hero p {
-    color: lightgray;
-    font-size: 12px;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 25px 0;
+    font-weight: bold;
 }
 
-.hero a {
-    color: var(--primary-color);
-}
-
-.hero div {
-    margin-top: 20px;
+.hero div a{
+    background-color: white;
+    color: skyblue;
+    margin: 0 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 25px;
 }
 
 .exp {
@@ -126,5 +120,23 @@ footer {
     text-align: center;
     padding: 40px;
     border: 2px solid white;
+}
+
+.exp{
+    background: linear-gradient(#5CF1FF, #0096A3);
+    height: 95vh;
+    align-items: center;
+}
+
+.exp-card{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.exp-card{
+    border: 1px solid black;
 }
 
